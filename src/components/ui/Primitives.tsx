@@ -91,7 +91,13 @@ export function RupeeInput({
 
 export function ScreenShell({ children }: { children: ReactNode }) {
   return (
-    <div className="flex min-h-screen w-full flex-col items-center bg-slate-50 px-4 py-10">
+    <div className="flex min-h-screen w-full flex-col items-center justify-center bg-gradient-to-b from-slate-100 to-slate-50 px-4 py-10">
+      <div className="mb-6 flex items-center gap-2 text-sm font-semibold tracking-wide text-emerald-800">
+        <span className="flex h-6 w-6 items-center justify-center rounded-full bg-emerald-700 text-xs text-white">
+          ₹
+        </span>
+        IPO INVESTING STUDY
+      </div>
       <div className="w-full max-w-2xl">{children}</div>
     </div>
   );
