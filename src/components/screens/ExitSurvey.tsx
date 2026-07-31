@@ -50,7 +50,7 @@ export function ExitSurvey({ onDone }: { onDone: () => Promise<void> | void }) {
       </div>
       <p className="mb-2 font-medium text-slate-800">In a sentence, what do you think this study was about?</p>
       <textarea
-        className="mb-6 w-full rounded-xl border border-slate-300 p-3 text-sm outline-none focus:border-emerald-600"
+        className="mb-6 w-full rounded-xl border border-slate-300 p-3 text-sm text-slate-900 outline-none focus:border-emerald-600"
         rows={3}
         value={demandGuess}
         onChange={(e) => setDemandGuess(e.target.value)}

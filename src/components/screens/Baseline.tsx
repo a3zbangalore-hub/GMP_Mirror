@@ -41,7 +41,7 @@ export function Baseline({ onDone }: { onDone: () => Promise<void> | void }) {
               {item.options.map((opt, oi) => (
                 <label
                   key={oi}
-                  className={`flex cursor-pointer items-center gap-3 rounded-lg border px-4 py-2 text-sm ${
+                  className={`flex cursor-pointer items-center gap-3 rounded-lg border px-4 py-2 text-sm text-slate-800 ${
                     literacyAnswers[qi] === oi ? "border-emerald-600 bg-emerald-50" : "border-slate-200"
                   }`}
                 >
@@ -67,7 +67,7 @@ export function Baseline({ onDone }: { onDone: () => Promise<void> | void }) {
             ].map((o) => (
               <label
                 key={o.label}
-                className={`flex-1 cursor-pointer rounded-lg border px-4 py-2 text-center text-sm ${
+                className={`flex-1 cursor-pointer rounded-lg border px-4 py-2 text-center text-sm text-slate-800 ${
                   ipoExperience === o.value ? "border-emerald-600 bg-emerald-50" : "border-slate-200"
                 }`}
               >
@@ -90,7 +90,7 @@ export function Baseline({ onDone }: { onDone: () => Promise<void> | void }) {
             {AGE_BANDS.map((band) => (
               <label
                 key={band}
-                className={`cursor-pointer rounded-lg border px-3 py-2 text-center text-sm ${
+                className={`cursor-pointer rounded-lg border px-3 py-2 text-center text-sm text-slate-800 ${
                   ageBand === band ? "border-emerald-600 bg-emerald-50" : "border-slate-200"
                 }`}
               >

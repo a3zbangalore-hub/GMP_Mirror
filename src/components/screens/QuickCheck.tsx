@@ -48,7 +48,7 @@ export function QuickCheck({ onDone }: { onDone: (result: { passed: boolean }) =
               {item.options.map((opt, oi) => (
                 <label
                   key={oi}
-                  className={`flex cursor-pointer items-center gap-3 rounded-lg border px-4 py-2 text-sm ${
+                  className={`flex cursor-pointer items-center gap-3 rounded-lg border px-4 py-2 text-sm text-slate-800 ${
                     answers[qi] === oi ? "border-emerald-600 bg-emerald-50" : "border-slate-200"
                   }`}
                 >
